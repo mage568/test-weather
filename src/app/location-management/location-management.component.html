@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="alert alert-warning">
+    Note: Once Track me is enabled, refresh page to enable Find me feature!
+  </div>
+  <div>
+    <div>
+      <button [disabled]="isTracking" class="btn btn-primary" (click)="findMe()">Find me</button>
+      <button class="btn btn-primary" (click)="trackMe()">Track me</button>
+    </div>
+    <div class="text-white" style="margin-top: 15px">
+      <span>Latitude: {{currentLat}}</span>
+      <br>
+      <span>Longitude: {{currentLong}}</span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h3>
+            <div #gmap style="width:100%;height:300px"></div>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>  
+</div>
