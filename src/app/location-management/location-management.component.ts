@@ -6,6 +6,7 @@ import { } from '@types/googlemaps';
   templateUrl: './location-management.component.html',
   styleUrls: ['./location-management.component.scss']
 })
+
 export class LocationManagementComponent implements OnInit {
 
   @ViewChild('gmap') gmapElement: any;
